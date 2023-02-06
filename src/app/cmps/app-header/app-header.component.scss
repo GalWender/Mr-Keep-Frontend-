@@ -1,0 +1,24 @@
+@import '../../../styles.scss';
+
+.header {
+    height: 64px;
+    background-color: $white;
+    -webkit-box-shadow: inset 0px -17px 0px -16px #D6D6D6;
+    box-shadow: inset 0px -17px 0px -16px #D6D6D6;
+
+    .hamburger-svg{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        padding: 10px;
+
+        &:hover {
+            background-color: $light-gray2;
+        }
+    }
+    .logo {
+        .logo-text {
+            font-family: jost-extra-light;
+        }
+    }
+}
