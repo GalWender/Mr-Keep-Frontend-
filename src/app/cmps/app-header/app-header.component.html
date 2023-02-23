@@ -2,14 +2,22 @@
     <button class="btn btn-hamburger">
         <img class="svg hamburger-svg" src="../../../assets/svg/hamburger.svg" alt="">
     </button>
-    <div class="logo flex align-center">
+    <div class="logo flex align-center" routerLink="/" routerLinkActive="active" (click)="onSearchRoute()">
         <img class="img logo-img" src="../../../assets/img/logo.png" alt="">
         <h1 class="logo-text">Mr Keep.</h1>
     </div>
-    <button routerLink="/search" routerLinkActive="active" class="btn btn-search">
-        <img class="img search-img" src="" alt="">
-        
-    </button>
+    <!-- <button routerLink="/search" routerLinkActive="active" class="btn btn-search flex align-center" *ngIf="!isSearch" (click)="onSearchRoute()"> -->
+        <!-- <img class="svg search-svg" src="../../../assets/svg/search.svg" alt=""> -->
+        <!-- <h3>Search</h3> -->
+    <!-- </button> -->
+    <div class="container container-search flex align-center" routerLink="/search" routerLinkActive="active" *ngIf="!isSearch" (click)="onSearchRoute()">
+        <img class="svg search-svg" src="../../../assets/svg/search.svg" alt="">
+        <input class="input input-search" type="text" placeholder="Search"/>
+    </div>
+    <div class="container container-search flex align-center" *ngIf="isSearch">
+        <img class="svg search-svg" src="../../../assets/svg/search.svg" alt="">
+        <input class="input input-search" type="text" placeholder="Search" id="input-search"/>
+    </div>
     <button class="btn btn-profile">
     </button>
 </section>

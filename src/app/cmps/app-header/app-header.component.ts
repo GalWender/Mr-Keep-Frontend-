@@ -9,7 +9,15 @@ export class AppHeaderComponent implements OnInit {
 
   constructor() { }
 
+  isSearch = false
+
   ngOnInit(): void {
+    const elSearchInput = document.querySelector("#input-search")
+    console.log(elSearchInput)
+  }
+
+  onSearchRoute() {
+    this.isSearch = !this.isSearch
   }
 
 }
