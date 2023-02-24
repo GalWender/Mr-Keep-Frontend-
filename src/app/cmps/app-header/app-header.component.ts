@@ -1,23 +1,23 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   templateUrl: './app-header.component.html',
   styleUrls: ['./app-header.component.scss']
 })
+
 export class AppHeaderComponent implements OnInit {
-
-  constructor() { }
-
-  isSearch = false
-
-  ngOnInit(): void {
-    const elSearchInput = document.querySelector("#input-search")
-    console.log(elSearchInput)
-  }
-
-  onSearchRoute() {
-    this.isSearch = !this.isSearch
-  }
-
+  
+  constructor(
+    // private route: ActivatedRoute,
+    // private router: Router
+    ) { }
+    
+    //based on which input to render
+    // isSearch = false
+    
+    ngOnInit(): void {
+    }
+    
 }
