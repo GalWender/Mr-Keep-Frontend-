@@ -8,6 +8,8 @@ import { SearchComponent } from './pages/search/search.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AutoFocusDirectiveModule } from './modules/auto-focus-directive/auto-focus-directive.module';
 import { LoginSignupComponent } from './pages/login-signup/login-signup.component';
+import { NoteListComponent } from './cmps/note-list/note-list.component';
+import { NotePreviewComponent } from './cmps/note-preview/note-preview.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { LoginSignupComponent } from './pages/login-signup/login-signup.componen
     SearchComponent,
     HomeComponent,
     LoginSignupComponent,
+    NoteListComponent,
+    NotePreviewComponent,
   ],
   imports: [
     BrowserModule,
