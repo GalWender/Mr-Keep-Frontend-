@@ -10,6 +10,10 @@ import { AutoFocusDirectiveModule } from './modules/auto-focus-directive/auto-fo
 import { LoginSignupComponent } from './pages/login-signup/login-signup.component';
 import { NoteListComponent } from './cmps/note-list/note-list.component';
 import { NotePreviewComponent } from './cmps/note-preview/note-preview.component';
+import { SideNavComponent } from './cmps/side-nav/side-nav.component';
+import { ReminderComponent } from './pages/reminder/reminder.component';
+import { ArchiveComponent } from './pages/archive/archive.component';
+import { TrashComponent } from './pages/trash/trash.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +24,10 @@ import { NotePreviewComponent } from './cmps/note-preview/note-preview.component
     LoginSignupComponent,
     NoteListComponent,
     NotePreviewComponent,
+    SideNavComponent,
+    ReminderComponent,
+    ArchiveComponent,
+    TrashComponent,
   ],
   imports: [
     BrowserModule,

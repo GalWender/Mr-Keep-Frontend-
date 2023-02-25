@@ -14,10 +14,15 @@ export class AppHeaderComponent implements OnInit {
     // private router: Router
     ) { }
     
+    isSideNavOpen:boolean = false
     //based on which input to render
     // isSearch = false
     
     ngOnInit(): void {
+    }
+
+    onSideNavToggle() {
+      this.isSideNavOpen = !this.isSideNavOpen
     }
     
 }

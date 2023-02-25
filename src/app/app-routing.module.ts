@@ -1,3 +1,6 @@
+import { TrashComponent } from './pages/trash/trash.component';
+import { ArchiveComponent } from './pages/archive/archive.component';
+import { ReminderComponent } from './pages/reminder/reminder.component';
 import { LoginSignupComponent } from './pages/login-signup/login-signup.component';
 import { SearchComponent } from './pages/search/search.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -16,7 +19,19 @@ const routes: Routes = [
   {
     path:'login',
     component:LoginSignupComponent
-  }
+  },
+  {
+    path:'reminder',
+    component:ReminderComponent
+  },
+  {
+    path:'archive',
+    component:ArchiveComponent
+  },
+  {
+    path:'trash',
+    component:TrashComponent
+  },
 ];
 
 @NgModule({
