@@ -1,5 +1,6 @@
+import { StorageService } from './../../services/storage.service';
+import { GlobalVarsService } from 'src/app/services/global-vars.service';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -10,19 +11,19 @@ import { Router } from '@angular/router';
 export class AppHeaderComponent implements OnInit {
   
   constructor(
-    // private route: ActivatedRoute,
-    // private router: Router
+    private globalVarsService:GlobalVarsService,
+    private storageService:StorageService,
     ) { }
-    
-    isSideNavOpen:boolean = false
-    //based on which input to render
-    // isSearch = false
+
+    isSideNavOpenStorageKey:string = 'IS_SIDE_NAV_OPEN'
     
     ngOnInit(): void {
+      this.globalVarsService.isSideNavOpen = this.storageService.loadFromStorage(this.isSideNavOpenStorageKey) || false
     }
 
     onSideNavToggle() {
-      this.isSideNavOpen = !this.isSideNavOpen
+      this.globalVarsService.isSideNavOpen = !this.globalVarsService.isSideNavOpen
+      this.storageService.saveToStorage(this.isSideNavOpenStorageKey,this.globalVarsService.isSideNavOpen)
     }
     
 }
