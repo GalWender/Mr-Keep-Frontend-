@@ -11,12 +11,13 @@ export class HomeComponent implements OnInit, DoCheck {
   constructor(
     private globalVarsService:GlobalVarsService
   ) { }
+  isSideNavOpen:boolean = this.globalVarsService.isSideNavOpen
 
   ngOnInit(): void {
   }
 
   ngDoCheck(): void {
-    
+    this.isSideNavOpen = this.globalVarsService.isSideNavOpen
   }
 
 }

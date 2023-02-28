@@ -14,6 +14,7 @@ import { SideNavComponent } from './cmps/side-nav/side-nav.component';
 import { ReminderComponent } from './pages/reminder/reminder.component';
 import { ArchiveComponent } from './pages/archive/archive.component';
 import { TrashComponent } from './pages/trash/trash.component';
+import { NoteAddComponent } from './cmps/note-add/note-add.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { TrashComponent } from './pages/trash/trash.component';
     ReminderComponent,
     ArchiveComponent,
     TrashComponent,
+    NoteAddComponent,
   ],
   imports: [
     BrowserModule,
