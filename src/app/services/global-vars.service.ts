@@ -9,11 +9,6 @@ export class GlobalVarsService {
 
   public isSideNavOpen:boolean = false
 
-  // public saveCurrRoute(route:string){
-
-  // }
-  // public loadCurrRoute():string {
-  //   return 
-  // }
+  public STORAGE_KEY_LOGGEDIN_USER: string = 'LOGGED_IN_USER'
 
 }

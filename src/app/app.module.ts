@@ -1,7 +1,7 @@
 import { AppComponent } from './app-root/app.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppHeaderComponent } from './cmps/app-header/app-header.component';
 import { SearchComponent } from './pages/search/search.component';
@@ -38,7 +38,8 @@ import { ClickOutsideDirective } from './directives/clickOutside/click-outside.d
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AutoFocusDirectiveModule
+    AutoFocusDirectiveModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
