@@ -15,6 +15,8 @@ import { ReminderComponent } from './pages/reminder/reminder.component';
 import { ArchiveComponent } from './pages/archive/archive.component';
 import { TrashComponent } from './pages/trash/trash.component';
 import { NoteAddComponent } from './cmps/note-add/note-add.component';
+import { StopPropagationDirective } from './directives/stopPropagation/stop-propagation.directive';
+import { ClickOutsideDirective } from './directives/clickOutside/click-outside.directive';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { NoteAddComponent } from './cmps/note-add/note-add.component';
     ArchiveComponent,
     TrashComponent,
     NoteAddComponent,
+    StopPropagationDirective,
+    ClickOutsideDirective,
   ],
   imports: [
     BrowserModule,

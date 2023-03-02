@@ -48,7 +48,7 @@
             margin-left: 490px;
         }
 
-        .add-note-text {
+        .add-note-text-open {
             background-color: transparent;
             box-shadow: $boxshadow-4;
             border-radius: 6px;
@@ -59,9 +59,11 @@
 
                 .title {
                     padding: 10px;
+                    padding-left: 16px;
+                    padding-right: 16px;
                     font-family: roboto;
                     font-size: $size;
-                    width: 600px;
+                    width: 550px;
                     outline: none;
                     border: none;
                     font-weight: 300;
@@ -95,7 +97,9 @@
                 }
 
                 .text {
-                    padding: 10px 10px 10px;
+                    padding: 10px;
+                    padding-left: 16px;
+                    padding-right: 16px;
                     font-family: roboto;
                     width: 600px;
                     outline: none;
@@ -109,11 +113,44 @@
                 height: 35px;
                 background-color: transparent;
                 display: flex;
-                .svg-color-pallete {
-                    margin-left: 40px;
+                align-items: center;
+                margin-bottom: 2px;
+
+                .svg {
+                    width: 30px;
+                    height: 30px;
+                    padding: 6px;
+                }
+                .svg-bell-plus {
+                    margin-left: 12px;
                 }
 
+                .svg-color-pallete {
+                    margin-left: 62px;
+                }
 
+                .svg-image {
+                    margin-left: 114px;
+                }
+
+                .svg-archive {
+                    margin-left: 166px;
+                }
+
+                .svg-three-dots-menu {
+                    margin-left: 210px;
+                }
+
+                .btn-close {
+                    margin-left: 500px;
+                    padding: 8px 24px;
+                    border-radius: 4px;
+
+                    &:hover {
+                        background-color: $light-gray2;
+                        filter: brightness(1.09);
+                    }
+                }
 
             }
         }

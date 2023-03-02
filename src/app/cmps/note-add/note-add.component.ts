@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { UtilService } from './../../services/util.service';
+import { Component, OnInit, DoCheck, HostListener, ViewChild, ElementRef, Renderer2, ViewChildren, QueryList } from '@angular/core';
 
 @Component({
   selector: 'note-add',
@@ -6,16 +7,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./note-add.component.scss']
 })
 export class NoteAddComponent implements OnInit {
+  constructor(
+  ) {}
 
-  constructor() { }
-
-  addNoteTextToggle:boolean = false
+  addNoteTextToggle: boolean = false
 
   ngOnInit(): void {
+
   }
 
-  onToggleAddNoteText() {
-    this.addNoteTextToggle = !this.addNoteTextToggle
+  onOpenAddNoteText() {
+    this.addNoteTextToggle = true
+  }
+  
+  onCloseAddNoteText() {
+    this.addNoteTextToggle = false    
+  }
+
+  clickedOutside(): void {
+    this.addNoteTextToggle = false;
   }
 
 }
