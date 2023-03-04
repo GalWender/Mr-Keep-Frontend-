@@ -17,6 +17,7 @@ import { TrashComponent } from './pages/trash/trash.component';
 import { NoteAddComponent } from './cmps/note-add/note-add.component';
 import { StopPropagationDirective } from './directives/stopPropagation/stop-propagation.directive';
 import { ClickOutsideDirective } from './directives/clickOutside/click-outside.directive';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { ClickOutsideDirective } from './directives/clickOutside/click-outside.d
     AppRoutingModule,
     AutoFocusDirectiveModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

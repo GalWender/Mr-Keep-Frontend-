@@ -4,5 +4,6 @@
     transition: 150ms;
     transition-delay: 350ms;
     margin-right: 100px;
-    margin-top: 35px;
+    margin-top: 64px;
+    min-height: calc(100vh - 64px);
 }

@@ -1,6 +1,9 @@
 @import '../../../styles.scss';
 
 .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
     height: 64px;
     background-color: $white;
     -webkit-box-shadow: inset 0px -17px 0px -16px #D6D6D6;

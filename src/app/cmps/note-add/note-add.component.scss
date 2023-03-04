@@ -2,8 +2,9 @@
 
 .note-add {
     .container-note-add {
-        background-color: transparent;
+        background-color: $white;
         border-radius: 6px;
+        margin-top: 30px;
 
         .input-note-add {
             border: none;
@@ -49,12 +50,12 @@
         }
 
         .add-note-text-open {
-            background-color: transparent;
+            background-color: $white;
             box-shadow: $boxshadow-4;
             border-radius: 6px;
 
             .top {
-                background-color: transparent;
+                background-color: $white;
                 width: 600px;
 
                 .title {
@@ -81,7 +82,7 @@
             }
 
             .middle {
-                background-color: transparent;
+                background-color: $white;
 
                 [contentEditable=true]:empty:before {
                     content: attr(datatext)
@@ -111,7 +112,7 @@
             .bottom {
                 width: 600px;
                 height: 35px;
-                background-color: transparent;
+                background-color: $white;
                 display: flex;
                 align-items: center;
                 margin-bottom: 2px;
